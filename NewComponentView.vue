@@ -1,16 +1,19 @@
 <template>
   <div>
-    <!--  -->
+    <new-component-card />
   </div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
 import Component from 'vue-class-component'
-import CaseFileCard from './render/CaseFileCard.vue'
+import NewComponentCard from './render/NewComponentCard.vue'
 
 @Component({
-  name: 'NewComponentView'
+  name: 'NewComponentView',
+  components: {
+    'new-component-card': NewComponentCard
+  }
 })
 export default class NewComponentView extends Vue {
 }

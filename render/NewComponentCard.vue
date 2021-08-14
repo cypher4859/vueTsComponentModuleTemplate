@@ -8,8 +8,8 @@
 import Component from 'vue-class-component'
 
 @Component({
-  name: 'comoponentName'
+  name: 'NewComponentCard'
 })
-export default class NewComponent extends Vue {
+export default class NewComponentCard extends Vue {
 }
 </script>
